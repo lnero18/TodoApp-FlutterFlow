@@ -84,12 +84,15 @@ class _AddTaskWidgetState extends State<AddTaskWidget> {
               ),
             ],
           ),
-          Text(
-            'Add Task...',
-            style: FlutterFlowTheme.of(context).headlineLarge.override(
-                  fontFamily: 'NTR',
-                  letterSpacing: 0.0,
-                ),
+          Align(
+            alignment: const AlignmentDirectional(-1.0, 0.0),
+            child: Text(
+              'Add Task...',
+              style: FlutterFlowTheme.of(context).headlineLarge.override(
+                    fontFamily: 'NTR',
+                    letterSpacing: 0.0,
+                  ),
+            ),
           ),
           Padding(
             padding: const EdgeInsetsDirectional.fromSTEB(30.0, 0.0, 0.0, 0.0),
